@@ -12,7 +12,7 @@ thrustSound = pygame.mixer.Sound('thrust.wav')
 fireSound = pygame.mixer.Sound('fire.wav')
 beat1 = pygame.mixer.Sound('beat1.wav')
 beat2 = pygame.mixer.Sound('beat2.wav')
-music = pygame.mixer.music.load('dbzSong.mp3')
+music = pygame.mixer.music.load('SpaceInvadersMusic.mp3')
 pygame.mixer.music.play(-1)
 
 bg = pygame.image.load('starbg.png')
@@ -77,8 +77,8 @@ class Player(object):
     def draw(self, win):
         win.blit(self.rotatedSurf, self.rotatedRect)
         #win.blit(self.img, (self.x, self.y))
-        pygame.draw.rect(win, (255, 0, 0), [self.head[0], self.head[1], 3, 3])
-        pygame.draw.rect(win, (255, 0, 0), [self.x, self.y, 3, 3])
+        # pygame.draw.rect(win, (255, 0, 0), [self.head[0], self.head[1], 3, 3])
+        # pygame.draw.rect(win, (255, 0, 0), [self.x, self.y, 3, 3])
 
     def turnLeft(self):
         self.angle += 5
